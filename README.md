@@ -1,9 +1,7 @@
 Documentation for kallisto
 ==========================
 
-.. image:: https://readthedocs.org/projects/kallisto-docs/badge/?version=latest
-   :alt: Documentation Status
-   :target: https://kallisto-docs.readthedocs.io
+[![Docs](https://readthedocs.org/projects/kallisto-docs/badge/?version=latest)](https://kallisto-docs.readthedocs.io)
 
 This is the official documentation for the kallisto atomic featurizer command-line interface.
 
