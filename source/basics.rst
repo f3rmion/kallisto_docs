@@ -30,7 +30,7 @@ Basic application
 
 .. code:: bash
 
-	> kallisto cns --inp <str> [--cntype "erf","cov","exp" {erf}] <output>
+	> kallisto cns --inp <str> [--cntype "erf","cov","exp"] <output>
 
 Electronegativity equilibration atomic partial charges
    :command: ``eeq``
