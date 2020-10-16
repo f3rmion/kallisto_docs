@@ -8,13 +8,14 @@ Welcome to kallisto's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   help
+   license
 
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+

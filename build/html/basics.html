@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Commandline Usage &mdash; kallisto 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Need Help" href="help.html" />
+    <link rel="prev" title="Setup and Installation" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="contents.html" class="icon icon-home" alt="Documentation Home"> kallisto
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Quickstart</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup and Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Commandline Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subcommands">Subcommands</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Need Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">kallisto</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Commandline Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/basics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="commandline-usage">
+<span id="quickstart"></span><h1><a class="toc-backref" href="#id1">Commandline Usage</a><a class="headerlink" href="#commandline-usage" title="Permalink to this headline">¶</a></h1>
+<p>The <cite>kallisto</cite> program is intended to be applied via the commandline.
+We use <cite>click</cite> to build <cite>kallisto</cite>, which enables us to define subcommands in a clear and structured way.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#commandline-usage" id="id1">Commandline Usage</a></p>
+<ul>
+<li><p><a class="reference internal" href="#subcommands" id="id2">Subcommands</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="subcommands">
+<h2><a class="toc-backref" href="#id2">Subcommands</a><a class="headerlink" href="#subcommands" title="Permalink to this headline">¶</a></h2>
+<p>The most basic properties in <code class="docutils literal notranslate"><span class="pre">kallisto</span></code> are obtained by sub-commands: coordination number (cns),
+electronegativity equilibration atomic partial chare (eeq), atomic static polarizabilities (alp),
+and charge dependent atomic van der Waals radii (vdw).</p>
+<dl class="simple">
+<dt>Coordination number</dt><dd><dl class="field-list simple">
+<dt class="field-odd">command</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">cns</span></code></p>
+</dd>
+<dt class="field-even">input</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-even">cntype</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--cntype</span> <span class="pre">{exp,</span> <span class="pre">cov,</span> <span class="pre">erf}</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>choose between different damping functions (string)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Basic application</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto cns --inp &lt;str&gt; <span class="o">[</span>--cntype <span class="s2">&quot;erf&quot;</span>,<span class="s2">&quot;cov&quot;</span>,<span class="s2">&quot;exp&quot;</span> <span class="o">{</span>erf<span class="o">}]</span> &lt;output&gt;
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Electronegativity equilibration atomic partial charges</dt><dd><dl class="field-list simple">
+<dt class="field-odd">command</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">eeq</span></code></p>
+</dd>
+<dt class="field-even">input</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-even">charge</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>absolute charge of the molecule (integer)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Basic application</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto eeq --inp &lt;str&gt; <span class="o">[</span>--chrg &lt;int&gt; <span class="o">{</span><span class="m">0</span><span class="o">}]</span> &lt;output&gt;
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Static atomic polarizabilities</dt><dd><dl class="field-list simple">
+<dt class="field-odd">command</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">alp</span></code></p>
+</dd>
+<dt class="field-even">input</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-even">charge</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>absolute charge of the molecule (integer)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Basic application</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto alp --inp &lt;str&gt; <span class="o">[</span>--chrg &lt;int&gt; <span class="o">{</span><span class="m">0</span><span class="o">}]</span> &lt;output&gt;
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Charge dependent van der Waals radii</dt><dd><dl class="field-list simple">
+<dt class="field-odd">command</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">vdw</span></code></p>
+</dd>
+<dt class="field-even">input</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-even">charge</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code></p>
+</dd>
+<dt class="field-odd">description</dt>
+<dd class="field-odd"><p>absolute charge of the molecule (integer)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Basic application</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto vdw --inp &lt;str&gt; <span class="o">[</span>--chrg &lt;int&gt; <span class="o">{</span><span class="m">0</span><span class="o">}]</span> &lt;output&gt;
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="help.html" class="btn btn-neutral float-right" title="Need Help" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="setup.html" class="btn btn-neutral float-left" title="Setup and Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Eike Caldeweyher
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
