@@ -19,62 +19,90 @@ and charge dependent atomic van der Waals radii (vdw).
 
 Coordination number
    :command: ``cns``
-   :input: ``--inp <str>``
+
+   :input: ``--inp <str>`` (optional)
+   :default: ``coord`` (`Turbomole`)
    :description:
      input file in `xyz` or `Turbomole` format (string)
-   :cntype: ``--cntype {exp, cov, erf}``
+
+   :cntype: ``--cntype {exp, cov, erf}`` (optional)
+   :default: ``cov``
    :description:
      choose between different damping functions (string)
 
+   :output:
+     standard output (or to file with name ``<output>``)
+
 Basic application
 
 .. code:: bash
 
-	> kallisto cns --inp <str> [--cntype "erf","cov","exp"] <output>
+	> kallisto cns --inp <str> --cntype <str> <output>
 
 Electronegativity equilibration atomic partial charges
    :command: ``eeq``
-   :input: ``--inp <str>``
+
+   :input: ``--inp <str>`` (optional)
+   :default: ``coord`` (`Turbomole`)
    :description:
      input file in `xyz` or `Turbomole` format (string)
-   :charge: ``--chrg <int>``
+
+   :charge: ``--chrg <int>`` (optional)
+   :default: ``0``
    :description:
      absolute charge of the molecule (integer)
+
+   :output:
+     standard output (or to file with name ``<output>``)
 
 Basic application
 
 .. code:: bash
 
-	> kallisto eeq --inp <str> [--chrg <int> {0}] <output>
+	> kallisto eeq --inp <str> --chrg <int> <output>
 
 Static atomic polarizabilities
    :command: ``alp``
-   :input: ``--inp <str>``
+
+   :input: ``--inp <str>`` (optional)
+   :default: ``coord`` (`Turbomole`)
    :description:
      input file in `xyz` or `Turbomole` format (string) 
-   :charge: ``--chrg <int>``
+
+   :charge: ``--chrg <int>`` (optional)
+   :default: ``0``
    :description:
      absolute charge of the molecule (integer)
+
+   :output:
+     standard output (or to file with name ``<output>``)
 
 Basic application
 
 .. code:: bash
 
-	> kallisto alp --inp <str> [--chrg <int> {0}] <output>
+	> kallisto alp --inp <str> --chrg <int> <output>
 
 
 Charge dependent van der Waals radii
    :command: ``vdw``
-   :input: ``--inp <str>``
+
+   :input: ``--inp <str>`` (optional)
+   :default: ``coord`` (`Turbomole`)
    :description:
      input file in `xyz` or `Turbomole` format (string)
-   :charge: ``--chrg <int>``
+
+   :charge: ``--chrg <int>`` (optional)
+   :default: ``0``
    :description:
      absolute charge of the molecule (integer)
+
+   :output:
+     standard output (or to file with name ``<output>``)
 
 Basic application
 
 .. code:: bash
 
-	> kallisto vdw --inp <str> [--chrg <int> {0}] <output>
+	> kallisto vdw --inp <str> --chrg <int> <output>
 

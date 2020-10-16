@@ -184,22 +184,31 @@ and charge dependent atomic van der Waals radii (vdw).</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">cns</span></code></p>
 </dd>
 <dt class="field-even">input</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code> (optional)</p>
 </dd>
-<dt class="field-odd">description</dt>
-<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+<dt class="field-odd">default</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">coord</span></code> (<cite>Turbomole</cite>)</p>
 </dd>
-<dt class="field-even">cntype</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--cntype</span> <span class="pre">{exp,</span> <span class="pre">cov,</span> <span class="pre">erf}</span></code></p>
+<dt class="field-even">description</dt>
+<dd class="field-even"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-odd">cntype</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">--cntype</span> <span class="pre">{exp,</span> <span class="pre">cov,</span> <span class="pre">erf}</span></code> (optional)</p>
+</dd>
+<dt class="field-even">default</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">cov</span></code></p>
 </dd>
 <dt class="field-odd">description</dt>
 <dd class="field-odd"><p>choose between different damping functions (string)</p>
+</dd>
+<dt class="field-even">output</dt>
+<dd class="field-even"><p>standard output (or to file with name <code class="docutils literal notranslate"><span class="pre">&lt;output&gt;</span></code>)</p>
 </dd>
 </dl>
 </dd>
 </dl>
 <p>Basic application</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto cns --inp &lt;str&gt; <span class="o">[</span>--cntype <span class="s2">&quot;erf&quot;</span>,<span class="s2">&quot;cov&quot;</span>,<span class="s2">&quot;exp&quot;</span> <span class="o">{</span>erf<span class="o">}]</span> &lt;output&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto cns --inp &lt;str&gt; --cntype &lt;str&gt; &lt;output&gt;
 </pre></div>
 </div>
 <dl class="simple">
@@ -208,22 +217,31 @@ and charge dependent atomic van der Waals radii (vdw).</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">eeq</span></code></p>
 </dd>
 <dt class="field-even">input</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code> (optional)</p>
 </dd>
-<dt class="field-odd">description</dt>
-<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+<dt class="field-odd">default</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">coord</span></code> (<cite>Turbomole</cite>)</p>
 </dd>
-<dt class="field-even">charge</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code></p>
+<dt class="field-even">description</dt>
+<dd class="field-even"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-odd">charge</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code> (optional)</p>
+</dd>
+<dt class="field-even">default</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 </dd>
 <dt class="field-odd">description</dt>
 <dd class="field-odd"><p>absolute charge of the molecule (integer)</p>
+</dd>
+<dt class="field-even">output</dt>
+<dd class="field-even"><p>standard output (or to file with name <code class="docutils literal notranslate"><span class="pre">&lt;output&gt;</span></code>)</p>
 </dd>
 </dl>
 </dd>
 </dl>
 <p>Basic application</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto eeq --inp &lt;str&gt; <span class="o">[</span>--chrg &lt;int&gt; <span class="o">{</span><span class="m">0</span><span class="o">}]</span> &lt;output&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto eeq --inp &lt;str&gt; --chrg &lt;int&gt; &lt;output&gt;
 </pre></div>
 </div>
 <dl class="simple">
@@ -232,22 +250,31 @@ and charge dependent atomic van der Waals radii (vdw).</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">alp</span></code></p>
 </dd>
 <dt class="field-even">input</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code> (optional)</p>
 </dd>
-<dt class="field-odd">description</dt>
-<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+<dt class="field-odd">default</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">coord</span></code> (<cite>Turbomole</cite>)</p>
 </dd>
-<dt class="field-even">charge</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code></p>
+<dt class="field-even">description</dt>
+<dd class="field-even"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-odd">charge</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code> (optional)</p>
+</dd>
+<dt class="field-even">default</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 </dd>
 <dt class="field-odd">description</dt>
 <dd class="field-odd"><p>absolute charge of the molecule (integer)</p>
+</dd>
+<dt class="field-even">output</dt>
+<dd class="field-even"><p>standard output (or to file with name <code class="docutils literal notranslate"><span class="pre">&lt;output&gt;</span></code>)</p>
 </dd>
 </dl>
 </dd>
 </dl>
 <p>Basic application</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto alp --inp &lt;str&gt; <span class="o">[</span>--chrg &lt;int&gt; <span class="o">{</span><span class="m">0</span><span class="o">}]</span> &lt;output&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto alp --inp &lt;str&gt; --chrg &lt;int&gt; &lt;output&gt;
 </pre></div>
 </div>
 <dl class="simple">
@@ -256,22 +283,31 @@ and charge dependent atomic van der Waals radii (vdw).</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">vdw</span></code></p>
 </dd>
 <dt class="field-even">input</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code></p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--inp</span> <span class="pre">&lt;str&gt;</span></code> (optional)</p>
 </dd>
-<dt class="field-odd">description</dt>
-<dd class="field-odd"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+<dt class="field-odd">default</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">coord</span></code> (<cite>Turbomole</cite>)</p>
 </dd>
-<dt class="field-even">charge</dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code></p>
+<dt class="field-even">description</dt>
+<dd class="field-even"><p>input file in <cite>xyz</cite> or <cite>Turbomole</cite> format (string)</p>
+</dd>
+<dt class="field-odd">charge</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">--chrg</span> <span class="pre">&lt;int&gt;</span></code> (optional)</p>
+</dd>
+<dt class="field-even">default</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 </dd>
 <dt class="field-odd">description</dt>
 <dd class="field-odd"><p>absolute charge of the molecule (integer)</p>
+</dd>
+<dt class="field-even">output</dt>
+<dd class="field-even"><p>standard output (or to file with name <code class="docutils literal notranslate"><span class="pre">&lt;output&gt;</span></code>)</p>
 </dd>
 </dl>
 </dd>
 </dl>
 <p>Basic application</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto vdw --inp &lt;str&gt; <span class="o">[</span>--chrg &lt;int&gt; <span class="o">{</span><span class="m">0</span><span class="o">}]</span> &lt;output&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt; kallisto vdw --inp &lt;str&gt; --chrg &lt;int&gt; &lt;output&gt;
 </pre></div>
 </div>
 </div>
