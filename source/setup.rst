@@ -15,6 +15,9 @@ Getting the Program
 
 `kallisto` runs on `python3`
 
+Setup virtual environment
+-------------------------
+
 Python development setup. Install the `pyenv` python version manager:
 
 .. code:: bash
@@ -28,9 +31,6 @@ and add this to the `~/.bashrc` and source it:
     > export PATH="~/.pyenv/bin:$PATH"
     > eval "$(pyenv init -)"
     > eval "$(pyenv virtualenv-init -)"
-
-Setup virtual environment
--------------------------
 
 Install the latest python versions
 
