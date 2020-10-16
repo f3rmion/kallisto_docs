@@ -12,8 +12,8 @@ We use `click` to build `kallisto`, which enables us to define subcommands in a 
 Subcommands
 ===========
 
-The most basic properties in ``kallisto`` are obtained by sub-commands: coordination number (cns), 
-electronegativity equilibration atomic partial chare (eeq), atomic static polarizabilities (alp),
+The most basic properties in ``kallisto`` are obtained by sub-commands: coordination numbers (cns), 
+electronegativity equilibration atomic partial charges (eeq), atomic static polarizabilities (alp),
 and charge dependent atomic van der Waals radii (vdw).
 
 
