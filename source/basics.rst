@@ -33,8 +33,6 @@ Coordination number
    :output:
      standard output (or to file with name ``<output>``)
 
-Basic application
-
 .. code:: bash
 
 	> kallisto cns --inp <str> --cntype <str> <output>
@@ -54,8 +52,6 @@ Electronegativity equilibration atomic partial charges
 
    :output:
      standard output (or to file with name ``<output>``)
-
-Basic application
 
 .. code:: bash
 
@@ -77,8 +73,6 @@ Static atomic polarizabilities
    :output:
      standard output (or to file with name ``<output>``)
 
-Basic application
-
 .. code:: bash
 
 	> kallisto alp --inp <str> --chrg <int> <output>
@@ -99,8 +93,6 @@ Charge dependent van der Waals radii
 
    :output:
      standard output (or to file with name ``<output>``)
-
-Basic application
 
 .. code:: bash
 
