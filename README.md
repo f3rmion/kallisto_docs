@@ -5,8 +5,7 @@ Documentation for kallisto
 
 This is the official documentation for the kallisto atomic featurizer command-line interface.
 
-This documentation is currently hosted at
-`readthedocs.org <https://kallisto-docs.readthedocs.io>`_.
+This documentation is currently hosted at [readthedocs](<https://kallisto-docs.readthedocs.io>).
 
 Contributors
 ------------
