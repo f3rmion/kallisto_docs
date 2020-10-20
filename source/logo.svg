@@ -68,26 +68,12 @@
      d="m 350.00001,257.78363 a 82,82 0 1 1 82,-82 v 0 a 82.093,82.093 0 0 1 -82,82 z"
      style="fill:#cccccc" />
   <circle
-     id="circle964"
-     fill="#e6e6e6"
-     r="14"
-     cy="36.783661"
-     cx="34"
-     style="fill:#cccccc;fill-opacity:1" />
-  <circle
      r="6"
      id="circle968"
      fill="#ff6584"
      cy="298.78366"
      cx="501.00003"
      style="fill:#5850ec;fill-opacity:1" />
-  <circle
-     id="circle970"
-     fill="#f2f2f2"
-     r="6"
-     cy="44.783661"
-     cx="507.00003"
-     style="fill:#cccccc" />
   <circle
      id="circle972"
      fill="#f2f2f2"
@@ -175,14 +161,14 @@
        id="tspan917"
        x="90.423386"
        y="262.23364"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.6667px;font-family:Arial;-inkscape-font-specification:Arial;fill:#5850ec;fill-opacity:1">kallisto</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:46.6667px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#5850ec;fill-opacity:1">kallisto</tspan></text>
   <text
      id="text919-9"
      y="308.30191"
      x="92.213753"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#b3b3b3;fill-opacity:1;stroke:none"
      xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;font-family:Arial;-inkscape-font-specification:Arial;fill:#808080;fill-opacity:1"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;font-family:Arial;-inkscape-font-specification:'Arial Italic';fill:#808080;fill-opacity:1"
        y="308.30191"
        x="92.213753"
        id="tspan917-1"
