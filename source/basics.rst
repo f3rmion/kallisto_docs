@@ -89,14 +89,19 @@ Charge dependent van der Waals radii
    :input: ``--vdwtype <str>`` (optional)
    :default: ``rahm``
    :description:
-     reference atomic van der Waals radii
-     rahm (DOI: 10.1002/chem.201700610)
-     truhlar (DOI: 10.1021/jp8111556)
+     | reference atomic van der Waals radii
+     | rahm (DOI: 10.1002/chem.201700610)
+     | truhlar (DOI: 10.1021/jp8111556)
 
    :charge: ``--chrg <int>`` (optional)
    :default: ``0``
    :description:
      absolute charge of the molecule (integer)
+
+   :charge: ``--angstrom`` (optional)
+   :default: radii in Bohr
+   :description:
+     print out van der Waals radii in Angstrom instead of Bohr.
 
    :output:
      standard output (or to file with name ``<output>``)
@@ -105,7 +110,7 @@ Charge dependent van der Waals radii
 
 	> kallisto vdw --inp <str> --chrg <int> <output>
 
-Writre out all bonds in structure
+Write out connectivity of underlying structure
    :command: ``bonds``
 
    :input: ``--inp <str>`` (optional)
